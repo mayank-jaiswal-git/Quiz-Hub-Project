@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="shortcut icon" href="../QuizHub-Images/science.png" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nunito:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../QuizHub.Css/RegisterQuiz.css" />
+  </head>
+  <body>
+    <div class="div-login">
+       <div class="left-div">
+        <div class="div-logo">
+            <pre>QuizHub</pre>
+        </div>
+        <div class="content">
+            <form id="form">
+                <div class="User-Details">
+                    <div class="input-Box">
+                        <span class="details">Full Name</span>
+                        <input class="first-name" id="name" type="text" placeholder="Enter Name Here..."  required>
+                        <span id="name_error" class="name_er name_hide">***Enter a Valid Name...</span>
+                    </div>
+                    
+                    <div class="input-Box">
+                        <span class="details">User Name</span>
+                        <input type="text" id="username" placeholder="Enter UserName Here..." required>
+                        <span id="username_error" class="username_er username_hide">***Enter a Valid User Name...</span>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="details">Email</span>
+                        <input type="email" id="email" placeholder="Enter Email Here..." required>
+                        <span id="email_error" class="email_er email_hide">***Enter a Valid Email...</span>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="details">Phone Number</span>
+                        <input type="tel" id="phno" placeholder="Enter Contact Number Here..." required>
+                        <span id="phno_error" class="phno_er phno_hide">***Enter a Valid Contact Number...</span>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="details">Password</span>
+                        <input type="password" id="pswd" placeholder="Enter Password Here..." required>
+                        <span id="pswd_error" class="pswd_er pswd_hide">***Password Must Be Strong...</span>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" id="conpswd" placeholder="Re-Enter Password Here..." required>
+                        <span id="conpswd_error" class="conpswd_er conpswd_hide">***Password is not Match...</span>
+                    </div>
+                </div>
+
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                      <label for="dot-1">
+                        <input type="radio" name="gender" id="dot-1" value="Male">
+                        <span>Male</span>
+                      </label>
+                      <label for="dot-2">
+                        <input type="radio" name="gender" id="dot-2" value="Female">
+                        <span>Female</span>
+                      </label>
+                      <label for="dot-3">
+                        <input type="radio" name="gender" id="dot-3" value="Prefer not to say">
+                        <span>Prefer not to say</span>
+                      </label>
+                    </div>
+                    <span id="gender_error" class="gender_er  gender_hide">***Choose a Valid Gender...</span>
+                </div>
+                <div class="check-div">
+                    <input type="checkbox" name="check" id="checkbox">
+                    <label for="checkbox" class="condi">I agree with all terms and conditions and accept all cookies.</label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+       </div>
+    </div>
+    <script src="../QuizHub.Js/Registration.js"></script>
+  </body>
+</html>
+

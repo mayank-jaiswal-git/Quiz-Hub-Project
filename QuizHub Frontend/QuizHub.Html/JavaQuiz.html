@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title-bar">Quiz</title>
+    <link rel="shortcut icon" href="../QuizHub-Images/science.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../QuizHub.Css/Quiz.css">
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <section class="quiz-info">
+            <div class="timer">Time: <span id="timer">00:00</span></div>
+        </section>
+
+        <main class="quiz-container">
+            <header>
+                <h1 id="headerName">Java Quiz</h1>
+            </header>
+
+            <section class="question-status">
+                <p>Question <span id="current-question">0</span> of <span id="total-questions">0</span></p>
+            </section>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <section class="question-area">
+                <div class="question-card" id="question-text"></div>
+            </section>
+
+            <section class="options" id="options-container"></section>
+
+            <footer>
+                <button id="next-button" class="next-button" onclick="nextQuestion()">Next</button>
+                <div class="btn-container">
+                    <button id="next-batch" class="next-batch-hide">Continue</button>
+                    <button id="result-button" class="result-button-hide">Show Result</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+<script src="../QuizHub.Js/Quiz.js?file=java"></script>
+</html>
+

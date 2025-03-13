@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password Page</title>
+  <link rel="shortcut icon" href="../QuizHub-Images/science.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nunito:wght@800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../QuizHub.Css/ResetPswdQuiz.css" />
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo">
+        <pre>QuizHub</pre>
+      </div>
+      <div class="content">
+        <form id="loginform">
+          <div class="input-box">
+            <span class="details">New Password</span>
+            <input type="password" id="newpassword" placeholder="Enter your password" required />
+            <span id="pswd_error" class="pswd_er pswd_hide">***Password Must Be Strong***</span>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" id="confpassword" placeholder="Re-Enter your password" required />
+            <span id="conpswd_error" class="conpswd_er conpswd_hide">***Password is not Match***</span>
+          </div>
+          <div class="button">
+            <button type="button" id="reset-btn">Reset Password</button>
+          </div>
+        </form>
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="../QuizHub.Html/LoginQuiz.html">Back to Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../QuizHub.Js/ResetPswdQuiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forgot Password Page</title>
+  <link rel="shortcut icon" href="../QuizHub-Images/science.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nunito:wght@800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../QuizHub.Css/ForgotPswdQuiz.css" />
+</head>
+
+<body>
+
+
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo">
+        <pre>QuizHub</pre>
+      </div>
+      <div class="content">
+        <form id="forgotPasswordForm">
+          <span id="top-message" class="message message_hide"></span>
+          <div class="input-box">
+            <span class="details">Enter Registered Email Here</span>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+          <span id="email_error" class="email_error_show email_error_hide"></span>
+            <div id="sendotpbtn" class="button send-otp-btn-hide">
+              <button type="button" onclick="return validateEmail()">Send OTP</button>
+            </div>
+
+            <div class="input-box input-box-hide" id="input-box-otp">
+              <span class="details">OTP</span>
+              <input type="text" id="input_otp" name="otp" placeholder="Enter your OTP" required />
+              <div class="timer">Time: <span id="timer">03:00</span></div>
+              <a href="#" id="resend_OTP" class="resend-otp resend-otp-hide">Resend OTP</a>
+              <span id="error_message" class="error_show error_hide"></span>
+              <div class="button">
+                  <button type="button" id="verify-OTP-btn">Verify OTP</button>
+              </div>
+          </div>
+
+        </form>
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="../QuizHub.Html/LoginQuiz.html">Back to Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../QuizHub.Js/ForgotPswdQuiz.js"></script>
+</body>
+
+</html>

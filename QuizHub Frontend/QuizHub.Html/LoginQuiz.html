@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="shortcut icon" href="../QuizHub-Images/science.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Nunito:wght@800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../QuizHub.Css/LoginQuiz.css" />
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo">
+        <pre>QuizHub</pre>
+      </div>
+      <div class="content">
+        <form id="loginform">
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" id="password" placeholder="Enter your password" required />
+          </div>
+
+          <span id="error_message" class="error_show error_hide"></span>
+
+          <div class="remember-forgot">
+            <a href="../QuizHub.Html/ForgotPswdQuiz.html" class="forgot-password">Forgot Password?</a>
+          </div>
+          <div class="button">
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="../QuizHub.Html/RegisterQuiz.html">Register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../QuizHub.Js/Login.js"></script>
+</body>
+
+</html>
